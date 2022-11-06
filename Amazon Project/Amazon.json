@@ -1,0 +1,240 @@
+{
+    "links" : ["Electronics","BestSeller","Mobiles&Accessoires","Computer&Accessoires","TVs","Laptobs","Cameras&Accessoires","HeadPhones","Speakers","WearableTechnology","HomeEntertaimentSystem"],
+    "operatingsystem" :["Android","Windows","Ios"],
+    "screenSize":["Up to 3.9 in","4 to 4.4 in","4.5 to 4.9 in","5 to 5.4 in","5.5 in & above"],
+    "internalMemorySize":["up to 3.9 GB","4 GB","8 GB","16 GB","32 GB","64 GB","128 GB","256 GB &above"],
+    "DataTransferStandard" : ["3G","4G","5G"],
+    "Features":["Bluetooth Enabled","Camera","Fast Charging Support","Flash","MP3 Ringtones","Octa Core Processor","Water-Resistant"],
+    "CameraResolution":["Up to 2.9 MP","3 to 4.9 MP","5 to 7.9 MP","8 to 12.9 MP","13 to 19.9 MP","20 MP & above"],
+    "RAMSize":["Up to 512 MB","1 GB","2 GB","3 GB","4 GB","6 GB","8 GB & above"],
+    "ModelYear":["2022","2021","2020","2019","2018","2017","2016"],
+    "FormFactor":["Bar","Foldable Case","Foldable Screen","Slider"],
+    "SIMCardSize":["Nano"],
+    "ConnectivityTechnology":["Bluetooth","NFC","USB","Wi-Fi"],
+    "DisplayType":["AMOLED","LCD","OLED"],
+    "ShootingModes":["Custom","Manual","Portrait"],
+    "HumanInterfaceInput" :["Buttons","Dial","Keypad","Microphone","Touch Pad","Touchscreen","Touchscreen with Stylus Support"],
+    "SIMCardSlotCount" : ["Single SIM","Dual SIM","Triple SIM","Quad SIM"],
+    "ConnectorType" :["3.5 mm Jack","Lightning","Micro USB","Mini USB","USB Type C"],
+    "Seller":["Egyptian Saudi Insurance House Co.","GrabMobily","Rabbit-Trade","Amazon.eg","فونو-تيك","Siri-","Switsh-plus","SamehHabib112","GrabologyStore","The-Union-Store"],
+    "Availability":["Include Out of Stock"],
+    "brands":[
+        {
+            "id":1,
+            "name": "Apple",
+            "image": "brands/apple.png"
+        },
+        {
+            "id":2,
+            "name": "Samsung",
+            "image": "brands/samsung.png"
+        },
+        {
+            "id":3,
+            "name": "Xiaomi",
+            "image": "brands/xioami.png"
+        },
+        {
+            "id":4,
+            "name": "Oppo",
+            "image": "brands/oppo.png"
+        },
+        {
+            "id":5,
+            "name": "Realme",
+            "image": "brands/realme.png"
+        },
+        {
+            "id":6,
+            "name": "Honor",
+            "image": "brands/honor.png"
+        },
+        {
+            "id":7,
+            "name": "Nokia",
+            "image": "brands/nokia.png"
+        },
+        {
+            "id":8,
+            "name": "Huawei",
+            "image": "brands/huawai.png"
+        }
+    ],
+    "menu":[
+        {
+            "id":1,
+            "name": "Samsung Galaxy A52 Dual SIM - 6.5 inches, 8 GB RAM, 128 GB - Blue",
+            "image": "menu/samsung.png",
+            "price" : "EGP7,399.00",
+            "description" : "Fulfilled by Amazon - FREE Shipping",
+            "offer" : "EGP 6,725.00",
+            "offernumber":"(7 new offer)"
+        },
+        {
+            "id":2,
+            "name": "Samsung Galaxy A52 Dual SIM - 6.5 inches, 8 GB RAM, 128 GB - Light Violet",
+            "image": "menu/samsung2.png",
+            "price" : "EGP7,399.00",
+            "description" : "Fulfilled by Amazon - FREE Shipping More Buying Choices",
+            "offer" : "EGP 6,725.00",
+            "offernumber" : "(7 new offer)"
+        },
+        {
+            "id":3,
+            "name": "Reno 6 Black Dual Sim 8GB RAM 128GB 4G LTE -",
+            "image": "menu/reno.png",
+            "price" : "EGP8,299.00",
+            "description" : "Get it as soon as Tomorrow, May 5 Fulfilled by Amazon - FREE Shipping",
+            "offer" : "EGP 8,150.00",
+            "offernumber":"(6 new offer)"
+        },
+        {
+            "id":4,
+            "name": "Samsung Galaxy A12 Dual SIM Mobile - 6.5 Inch 64 GB 4 GB RAM 4G LTE - Blue",
+            "image": "menu/samsung3.png",
+            "price" : "EGP3,715.00",
+            "description" :"Fulfilled by Amazon - FREE Shipping" ,
+            "offer" : "",
+            "offernumber": ""
+        },
+        {
+            "id":5,
+            "name": "Nokia 106 Dual SIM- Dark Grey",
+            "image": "menu/nokia.png",
+            "price" : "EGP415.00",
+            "description" :"Get it as soon as Tomorrow, May 5 Fulfilled by Amazon - FREE Shipping" ,
+            "offer" : "",
+            "offernumber": ""
+        },
+        {
+            "id":6,
+            "name": "Oppo A55 4GB RAM, 64GB - RAINBOW BLUE",
+            "image": "menu/oppo.png",
+            "price" :"EGP5,190.00" ,
+            "description" :"Get it Wednesday, May 11 - Thursday, May 12" ,
+            "offer" : "EGP 21.00 shipping",
+            "offernumber" : "Only 1 left in stock - order soon."
+        },
+        {
+            "id":7,
+            "name": "Oppo A55 4GB RAM, 64GB - STARRY BALCK",
+            "image": "menu/oppo2.png",
+            "price" :"EGP5,150.00" ,
+            "description" :"Get it Wednesday, May 11 - Thursday, May 12" ,
+            "offer" : "EGP 21.00 shipping",
+            "offernumber" : "Only 1 left in stock - order soon."
+        },
+        {
+            "id":8,
+            "name": "Samsung Galaxy A32 Dual SIM - 6.5 Inches, 6GB RAM, 128GB, 4G LTE - White",
+            "image": "menu/samsung4.png",
+            "price" :"EGP5,799.00" ,
+            "description" :"Get it as soon as Tomorrow, May 5 Fulfilled by Amazon - FREE Shipping" ,
+            "offer" : "",
+            "offernumber" : ""
+        },
+        {
+            "id":9,
+            "name": "Samsung Galaxy A52s Dual SIM - 128GB, 8GB RAM, 5G, BLACK",
+            "image": "menu/samsung5.png",
+            "price" :"EGP8,003.75" ,
+            "description" :"Get it as soon as Tomorrow, May 5 Fulfilled by Amazon - FREE Shipping" ,
+            "offer" : "EGP 7,998.00",
+            "offernumber" : "(5 new offers)"
+        },
+        {
+            "id":10,
+            "name": "Samsung Galaxy A22 Dual SIM 64GB, 4GB RAM, Black",
+            "image": "menu/samsung6.png",
+            "price" :"" ,
+            "description" :"No featured offers available" ,
+            "offer" : "",
+            "offernumber" : ""
+        },
+        {
+            "id":11,
+            "name": "Xiaomi Redmi Note 10S Dual SIM Amoled Display Ocean Blue 6GB RAM 128GB 4G LTE",
+            "image": "menu/xiaomi.jpg",
+            "price" :"EGP5,225.76" ,
+            "description" :"Get it as soon as Tomorrow, May 5 Fulfilled by Amazon - FREE Shipping" ,
+            "offer" : "",
+            "offernumber" : ""
+        },
+        {
+            "id":12,
+            "name": "Xiaomi Redmi Note 11,90 Hz Amoled Pioneer, 64 GB, 4GB RAM, Graphite Gray",
+            "image": "menu/xiaomi2.png",
+            "price" :"EGP4,299.00" ,
+            "description" :"Fulfilled by Amazon - FREE Shipping" ,
+            "offer" : "",
+            "offernumber" : ""
+        }
+    ],
+    "elctronicsside":["Camera & Photo","Car & Vehicle Electronics","Computers, Components & Accessories","eBook Readers & Accessories","Headphones, Earbuds & Accessories","Hi-Fi & Home Audio","Home Theater, TV & Video","Household Batteries & Chargers","Mobile Phones & Communication","Portable Sound & Vision","Power Accessories","Sat Nav, GPS, Navigation & Accessories","Tablets","Telephones, VoIP & Accessories","Wearable Technology"],
+    "FulfilledbyAmazon" : ["Fulfilled by Amazon"],
+    "Brand" : ["Generic","HP","SAMSUNG","Spigen","Apple","Baseus","Hoco"],
+    "Price" :["Up to 50 EGP","50 to 100 EGP","100 to 300 EGP","700 to 1500 EGP","1500 to 2500 EGP","2500 EGP & above"],
+    "Deals" : ["Today's Deals"],
+    "EletronBrands":[
+        {
+            "id":1,
+            "name": "Apple",
+            "image": "electronbrands/apple.png"
+        },
+        {
+            "id":2,
+            "name": "Labtops",
+            "image": "electronbrands/labtobs.png"
+        },
+        {
+            "id":3,
+            "name": "Televisions",
+            "image": "electronbrands/television.png"
+        },
+        {
+            "id":4,
+            "name": "Cameras",
+            "image": "electronbrands/cameras.png"
+        },
+        {
+            "id":5,
+            "name": "Tablets",
+            "image": "electronbrands/tablets.png"
+        },
+        {
+            "id":6,
+            "name": "HeadPhones",
+            "image": "electronbrands/headphones.png"
+        },
+        {
+            "id":7,
+            "name": "Smart wearables",
+            "image": "electronbrands/smartwearables.png"
+        },
+        {
+            "id":8,
+            "name": "PCs&Accessories",
+            "image": "electronbrands/pcs.png"
+        },
+        {
+            "id":9,
+            "name": "Printers&ink",
+            "image": "electronbrands/printers.png"
+        },
+        {
+            "id":10,
+            "name": "Speakers",
+            "image": "electronbrands/speakers.png"
+        },
+        {
+            "id":11,
+            "name": "Videogames",
+            "image": "electronbrands/video.png"
+        },
+        {
+            "id":12,
+            "name": "Musical instruments",
+            "image": "electronbrands/musical.png"
+        }
+    ]
+}

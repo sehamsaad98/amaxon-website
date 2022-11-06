@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Your Souq is now Amazon.eg | Welcome to Amazon.eg in Egypt. Online Shopping for Electronics, Apparel, Beauty
+        and Grooming, Grocery and more</title>
+
+    <!-- Css links -->
+    
+    
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/style_help.css">
+<link rel="stylesheet" href="css/style-H.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+<!-- Navbar Start -->
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img class="amazon" src="img/amazon.jpg">
+        </a>
+        <img class="egypt" src="img/deliver-to-egypt.JPG">
+    </div>
+    <form>
+        <select name="categories" id="categories">
+            <option value="All">All</option>
+            <option value="Amazon Devices">Amazon Devices</option>
+            <option value="Amazon Fashion">Amazon Fashion</option>
+            <option value="Arts, Crafts & Sewing">Arts, Crafts & Sewing</option>
+            <option value="Automotive Parts & Accessories">Automotive Parts & Accessories</option>
+            <option value="Baby">Baby</option>
+            <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+            <option value="Books">Books</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Grocery & Gourmet Food">Grocery & Gourmet Food</option>
+            <option value="Health, Household & Baby Care">Health, Household & Baby Care</option>
+            <option value="Home & Garden">Home & Garden</option>
+            <option value="Home Related">Home Related</option>
+            <option value="Industrial & Scientific">Industrial & Scientific</option>
+            <option value="Musical Instruments">Musical Instruments</option>
+            <option value="Office Products">Office Products</option>
+            <option value="Pet Supplies">Pet Supplies</option>
+            <option value="Software">Software</option>
+            <option value="Sports">Sports</option>
+            <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+            <option value="Toys & Games">Toys & Games</option>
+            <option value="Video Games">Video Games</option>
+        </select>
+        <input type="text">
+    </form>
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <img class="navbar-signin" src="img/navbar-signin.JPG">
+    <i style="display: inline-block; color: white; margin-top: 17px; " id="cart"
+        class="fas fa-shopping-cart"></i>
+    <span class="cart-quantity">0</span>
+</header>
+<!-- Topnav Start -->
+<nav class="topnav">
+    <a onclick="openNav()"><i style="padding-right: 10px;" class="fa-solid fa-bars"></i>All</a>
+    <a href="amazon.html">Your amazon.eg</a>
+    <a href="todays-deale.html">Today's Deals</a>
+    <a href="">Sell</a>
+    <a href="help.html">Help</a>
+    <a href="">Fashion</a>
+    <a href="Grocery22.html">Grocery</a>
+    <a href="perfume page.html">Perfumes</a>
+    <a href="phone.html">Mobile Phones</a>
+    <a href="Electronics.html">Electronics</a>
+    <a href="">Appliances</a>
+    <a href="home.html">Home</a>
+    <a href="">Coupons</a>
+    <img class="navbar-sale" src="img/navbar-sale.jpg">
+</nav>
+ <!-- Sidenav Start -->
+<nav id="myNav" class="overlay">
+    <a id="closeSidebar" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+    <div class="overlay-content" id="mySidepanel">
+        <div class="hello">
+            <h2>Hello,Sign in</h2>
+        </div>
+        <div class="sidebar">
+            <h3 style="margin-bottom: 15px; float: left;">Trending</h3>
+            <ul>
+                <li style="float: left; clear: left;"><a href="#">About</a></li>
+                <li style="float: left; clear: left;"><a href="#">Services</a></li>
+                <li style="float: left; clear: left;"><a href="#">Clients</a></li>
+                <li style="float: left; clear: left;"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div style="clear: left;"></div>
+        <div class="sidebar">
+            <h3 style="margin-bottom: 15px; float: left;">Digital Content And Devices</h3>
+            <ul>
+                <li style="float: left; clear: left;" onclick="openNav2()"><a href="#">Amazon Kindle E-readers
+                        <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i></a>
+                </li>
+            </ul>
+            <nav id="myNav2" class="overlay2">
+                <div class="overlay-content" id="mySidepanel">
+                    <div class="hello">
+                        <h2>Hello,Sign in</h2>
+                    </div>
+                    <div onclick="closeNav2()" style="cursor: pointer;" class="sidebar">
+                        <i class="fa-solid fa-arrow-left"
+                            style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                        <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                    </div>
+                    <div style="clear: left;"></div>
+                    <div class="sidebar">
+                        <h3 style="margin-bottom: 15px; float: left;">Kindle E-Readers</h3>
+                        <ul>
+                            <li style="float: left; clear: left;"><a href="#">Kindle</a></li>
+                            <li style="float: left; clear: left;"><a href="#">Kindle Paperwhite</a></li>
+                            <li style="float: left; clear: left;"><a href="#">Kindle Oasis</a></li>
+                            <li style="float: left; clear: left;"><a href="#">All Kindle E-readers</a></li>
+                        </ul>
+                    </div>
+                    <div style="clear: left;"></div>
+                    <div class="sidebar" style="border-bottom: none;">
+                        <h3 style="margin-bottom: 15px; float: left;">Kindle Content</h3>
+                        <ul>
+                            <li style="float: left; clear: left;"><a href="#">How to buy eBooks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="sidebar">
+            <h3 style="margin-bottom: 15px; float: left;">Shop By Category</h3>
+            <ul>
+                <li onclick="openNav3()" style="float: left; clear: left;"><a href="#">Mobiles, Tablets &
+                        Accessories
+                        <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                    </a></li>
+                <nav id="myNav3" class="overlay2">
+                    <div class="overlay-content" id="mySidepanel">
+                        <div class="hello">
+                            <h2>Hello,Sign in</h2>
+                        </div>
+                        <div onclick="closeNav3()" style="cursor: pointer;" class="sidebar">
+                            <i class="fa-solid fa-arrow-left"
+                                style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                            <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar">
+                            <h3 style="margin-bottom: 15px; float: left;">Mobiles, Tablets & More</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">All Mobile Phones</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Tablets</a></li>
+                                <li style="float: left; clear: left;"><a href="#">wearable Technology</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Cases & Covers</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Power Banks & Chargers</a></li>
+                                <li style="float: left; clear: left;"><a href="#">All Mobile Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar" style="border-bottom: none;">
+                            <h3 style="margin-bottom: 15px; float: left;">Kindle Content</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">How to buy eBooks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <li onclick="openNav4()" style="float: left; clear: left;"><a href="#">Computers & Office Supplies
+                        <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                    </a></li>
+                <nav id="myNav4" class="overlay2">
+                    <div class="overlay-content" id="mySidepanel">
+                        <div class="hello">
+                            <h2>Hello,Sign in</h2>
+                        </div>
+                        <div onclick="closeNav4()" style="cursor: pointer;" class="sidebar">
+                            <i class="fa-solid fa-arrow-left"
+                                style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                            <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar">
+                            <h3 style="margin-bottom: 15px; float: left;">Computers</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">All Computers</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Laptops</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Desktop & Monitors</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Drives & Storage</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Networking Devices</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Keyboards & Mice</a></li>
+                                <li style="float: left; clear: left;"><a href="#">PC Gaming</a></li>
+                                <li style="float: left; clear: left;"><a href="#">All Computer Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar" style="border-bottom: none;">
+                            <h3 style="margin-bottom: 15px; float: left;">Office & Stationery</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">Printers & Accessories</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Office & School Supplies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <li onclick="openNav5()" style="float: left; clear: left;"><a href="#">TVs & Electronics
+                        <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                    </a></li>
+                <nav id="myNav5" class="overlay2">
+                    <div class="overlay-content" id="mySidepanel">
+                        <div class="hello">
+                            <h2>Hello,Sign in</h2>
+                        </div>
+                        <div onclick="closeNav5()" style="cursor: pointer;" class="sidebar">
+                            <i class="fa-solid fa-arrow-left"
+                                style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                            <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar" style="border-bottom: none;">
+                            <h3 style="margin-bottom: 15px; float: left;">Electronics</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">All Electronics</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Televisions</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Cameras</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Headphones</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Speakers</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Home Entertainment Systems</a>
+                                </li>
+                                <li style="float: left; clear: left;"><a href="#">All Electronic Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="clear: left;"></div>
+                    </div>
+                </nav>
+                <li onclick="openNav6()" style="float: left; clear: left;"><a href="#">Women's Fashion
+                        <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                    </a></li>
+                <nav id="myNav6" class="overlay2">
+                    <div class="overlay-content" id="mySidepanel">
+                        <div class="hello">
+                            <h2>Hello,Sign in</h2>
+                        </div>
+                        <div onclick="closeNav6()" style="cursor: pointer;" class="sidebar">
+                            <i class="fa-solid fa-arrow-left"
+                                style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                            <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar">
+                            <h3 style="margin-bottom: 15px; float: left;">Amazon Fashion</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">All Fashion</a></li>
+                                <li style="float: left; clear: left;"><a href="#">All Women's Fashion</a></li>
+                            </ul>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar">
+                            <h3 style="margin-bottom: 15px; float: left;">Clothing, Watches & More</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">Clothing</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Watches</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Jewelry</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Sportswear</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Lingerie & Sleepwear</a></li>
+                            </ul>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar" style="border-bottom: none;">
+                            <h3 style="margin-bottom: 15px; float: left;">Bags, Shoes & More</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">Shoes</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Bags & Wallets</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Eyewear</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Sports Shoes</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Travel Bags & Backpacks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </ul>
+        </div>
+        <div class="sidebar">
+            <h3 style="margin-bottom: 15px; float: left;">Programs & Features</h3>
+            <ul>
+                <li style="float: left; clear: left;"><a href="#">Today's Deals</a></li>
+            </ul>
+        </div>
+        <div class="sidebar" style="border-bottom: none;">
+            <h3 style="margin-bottom: 15px; float: left;">Help & Settings</h3>
+            <ul>
+                <li style="float: left; clear: left;"><a href="#">Your Account</a></li>
+                <li style="float: left; clear: left;"><a href="#">
+                        <i style="color: black; margin-top: 0; margin-left: 0; padding-right: 10px;"
+                            class="fa-solid fa-globe"></i>English</a></li>
+                <li style="float: left; clear: left;"><a href="#">Egypt</a></li>
+                <li style="float: left; clear: left;"><a href="#">Help</a></li>
+                <li style="float: left; clear: left;"><a href="#">Sign In</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  cartModal Start -->
+<div class="cart-modal-overlay">
+    <div class="cart-modal">
+        <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+        <div class="product-rows"></div>
+        <div class="total">
+            <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">0 egp</span>
+            <button class="purchase-btn">PURCHASE</button>
+        </div>
+    </div>
+</div>
+    <!-- Navbar Start -->
+    <div class="bg-color-help">
+
+
+
+        <div class="body-contect">
+            <div class="a-expander-container">
+                <ul class="a-unordered-list a-nostyle a-vertical a-spacing-none1">
+                    <li class="a-spacing-top-small"><span class="a-list-item">
+                            <div class="a-box a-alert">
+                                <div class="a-box-inner a-alert-container"><i
+                                        class="fa-solid fa-triangle-exclamation"></i>
+                                    <div class="a-alert-content1">
+                                        <p></p>
+                                        <p>Our phone lines are open from 8:00 am to 12 midnight. You can call us
+                                            directly at
+                                            08000262966 to talk to our Customer Service team.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span></li>
+                </ul>
+            </div>
+
+            <div class="a-spacing-large">
+                <div class="h1_hello">
+                    <h1 class="h1-hello">
+                        Hello. What can we help you with?
+                    </h1>
+
+                </div>
+                <div class="a-section">
+                    <h2 class="a-spacing">
+
+
+
+                        Some things you can do here
+
+
+                    </h2>
+                </div>
+                <div class="group-box">
+                    <!-- box 1-->
+                    <div class="a-column a-span4">
+
+                        <a href="#" class="a-color-base ">
+                            <div class="b1">
+                                <div class="a-column a-span3">
+                                    <img alt="Your Orders"
+                                        src="https://m.media-amazon.com/images/G/42/x-locale/cs/help/images/gateway/self-service/order.png"
+                                        class="box-image" />
+                                </div>
+
+                                <div class="a-column a-span9 ss-rich-card-column-text a-span-last">
+                                    <h3 class=" a-text-normal">
+                                        Your Orders
+                                    </h3>
+
+
+
+                                    <ul class="a-unordered-list ">
+
+                                        <li><span class="a-list-item ">
+                                                Track packages
+                                            </span></li>
+
+                                        <li><span class="a-list-item ">
+                                                Edit or cancel orders
+                                            </span></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <!-- box 2-->
+                    <div class="a-column a-span4">
+                        <a href="#" class="a-color-base">
+                            <div class="b1">
+                                <div class="a-column a-span3">
+                                    <img alt="Returns &amp; Refunds"
+                                        src="https://m.media-amazon.com/images/G/42/x-locale/cs/help/images/gateway/self-service/return.png"
+                                        class="ss-v2-box-image" />
+                                </div>
+
+                                <div class="a-column a-span9 ss-rich-card-column-text a-span-last">
+                                    <h3 class="a-spacing-none a-text-normal">
+                                        Returns & Refunds
+                                    </h3>
+
+
+                                    <ul class="a-unordered-list a-nostyle a-vertical">
+
+                                        <li><span class="a-list-item a-color-secondary">
+                                                Return or exchange items
+                                            </span></li>
+
+                                        <li><span class="a-list-item a-color-secondary">
+                                                Print return mailing labels
+                                            </span></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- box 3-->
+                    <div class="a-column a-span4">
+                        <a class="a-color-base " href="#">
+
+                            <div class="b1">
+                                <div class="a-column a-span3">
+                                    <img alt="Souq Orders"
+                                        src="https://m.media-amazon.com/images/G/42/x-locale/cs/help/images/gateway/self-service/souq.png"
+                                        class="ss-v2-box-image" />
+                                </div>
+
+                                <div class="a-column a-span9 ss-rich-card-column-text a-span-last">
+                                    <h3 class="a-spacing-none a-text-normal">
+                                        Souq Orders
+                                    </h3>
+
+
+                                    <ul class="a-unordered-list a-nostyle a-vertical">
+
+                                        <li><span class="a-list-item a-color-secondary">
+                                                Edit or cancel orders
+                                            </span></li>
+
+                                        <li><span class="a-list-item a-color-secondary">
+                                                Return Orders
+                                            </span></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                        </a>
+                    </div>
+                </div>
+                <div class="group-box">
+
+
+                    <!-- box 4-->
+
+                    <div class="a-column a-span4">
+                        <a href="#" class="a-color-base">
+                            <div class="b1">
+                                <div class="a-column a-span3">
+                                    <img alt="Account Settings"
+                                        src="https://m.media-amazon.com/images/G/42/x-locale/cs/help/images/gateway/self-service/account.png"
+                                        class="ss-v2-box-image" />
+                                </div>
+
+                                <div class="a-column a-span9 ss-rich-card-column-text a-span-last">
+                                    <h3 class="a-spacing-none a-text-normal">
+                                        Account Settings
+                                    </h3>
+                                    <ul class="a-unordered-list a-nostyle a-vertical">
+
+                                        <li><span class="a-list-item a-color-secondary">
+                                                Change email or password
+                                            </span></li>
+
+                                        <li><span class="a-list-item a-color-secondary">
+                                                Update login information
+                                            </span></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="a-column a-span4">
+                        <!-- box 5 -->
+                        <a class="a-color-base a-link-normal a-text-normal" href="#">
+
+                            <div class="b1">
+                                <div class="a-column a-span3">
+                                    <img alt="Payment Settings"
+                                        src="https://m.media-amazon.com/images/G/42/x-locale/cs/help/images/gateway/self-service/payment.png"
+                                        class="ss-v2-box-image" />
+                                </div>
+
+                                <div class="a-column a-span9 ss-rich-card-column-text a-span-last">
+                                    <h3 class="a-spacing-none a-text-normal">
+                                        Payment Settings
+                                    </h3>
+                                    <ul class="a-unordered-list a-nostyle a-vertical">
+
+                                        <li><span class="a-list-item a-color-secondary">
+                                                Add or edit payment methods
+                                            </span></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="a-column a-span4">
+                        <!-- box 6 -->
+                        <a class="a-color-base a-link-normal a-text-normal" href="#">
+
+                            <div class="b1">
+                                <div class="a-column a-span3">
+                                    <img alt="Amazon and COVID-19"
+                                        src="https://m.media-amazon.com/images/G/42/x-locale/cs/help/images/gateway/self-service/covid19.png"
+                                        class="ss-v2-box-image" />
+                                </div>
+
+                                <div class="a-column a-span9 ss-rich-card-column-text a-span-last">
+                                    <h3 class="a-spacing-none a-text-normal">
+                                        Amazon and COVID-19
+                                    </h3>
+                                    <ul class="a-unordered-list a-nostyle a-vertical">
+
+                                        <li><span class="a-list-item a-color-secondary">
+                                                Impacts on orders and deliveries
+                                            </span></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                        </a>
+                    </div>
+
+
+
+                </div>
+                <div>
+
+                    <div class="a-column a-span4">
+                        <!-- box 7-->
+                        <a class="a-color-base a-link-normal a-text-normal" href="#">
+                            <div class="b1">
+                                <div class="a-column a-span3">
+                                    <img alt="Contact Us"
+                                        src="https://m.media-amazon.com/images/G/42/x-locale/cs/help/images/gateway/self-service/contact_us.png"
+                                        class="ss-v2-box-image" />
+                                </div>
+
+                                <div class="a-column a-span9 ss-rich-card-column-text a-span-last">
+                                    <h3 class="a-spacing-none a-text-normal">
+                                        Contact Us
+                                    </h3>
+                                    <ul class="a-unordered-list a-nostyle a-vertical">
+
+                                        <li><span class="a-list-item a-color-secondary">
+                                                Contact our customer service via phone or chat
+                                            </span></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- search input -->
+            <div class="search-style-margin">
+                <form id="search-submit" action="#">
+                    <label for="search-help" id="label-search">Find more solutions <span
+                            style="font-size: large;"><em>something
+                                like, "question about a charge"</em> </span></label>
+                    <br>
+                    <i class="fa-solid fa-magnifying-glass icons-style"></i> <input type="search" autocomplete="off"
+                        id="search-help" name="search" autofocus>
+                </form>
+            </div>
+        </div>
+        <div>
+            <div style="border-top:  1px solid  rgb(170, 161, 161); width: 100% ;height: 10px;">
+
+            </div>
+        </div>
+    </div>
+
+
+    <section class="section-toppic">
+        <div>
+            <div>
+                <h1>
+                    Browse Help Topics
+                </h1>
+            </div>
+            <div class="browse-topic-style">
+                <ul class="topic-flex">
+                    <li class="topic-maouse-hover">
+                        <h4 onmouseover="myfunctionover()" onmouseout="myfuntionout()">Recommended Topics</h4>
+                        <div class="topic1 ">
+                            <div class="topic-inside-of">
+                                <ul class="topic-insid01">
+                                    <h5>Learn how to...</h5>
+                                    <li><a href="">Placing Orders</a></li>
+                                    <li><a href="">Free Shipping by Amazon</a></li>
+                                    <li><a href="">Print an Invoice</a></li>
+                                    <li><a href="">Return Items You OrderedVideoVideo</a></li>
+                                    <li><a href=" ">Check the Status of Your Refund</a></li>
+                                    <li><a href="">Redeem Gift Card Balance</a></li>
+                                    <li><a href="">Create a Repair Label</a></li>
+                                    <li><a href="">Identifying Whether an Email is from Amazon</a></li>
+                                </ul>
+                                <ul>
+                                    <h5>Quick Solutions</h5>
+                                    <li><a href="">Track Your Shipment</a></li>
+                                    <li><a href="">Manage Your Payment Methods</a></li>
+                                    <li><a href="">Manage Your Address book</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="topic-maouse-hover1">
+                        <h4 onmouseover="myfunctionover1()" onmouseout="myfuntionout1()">Managing Souq.com Orders</h4>
+
+                        <div class="topic2">
+                            <div class="topic-inside-of">
+                                <ul>Managing Souq.com Orders
+                                    <li><a href="">Souq.com Account</a></li>
+                                    <li><a href="">Souq.com Orders</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="topic-maouse-hover2">
+                        <h4 onmouseover="myfunctionover2()" onmouseout="myfuntionout2()">Shipping & Delivery</h4>
+                        <div class="topic3">
+                            <div class="topic-inside-of">
+                                <ul>Shipping & Delivery
+                                    <li><a href="">Shipping & Delivery</a></li>
+                                    <li><a href="">Track your Shipment</a></li>
+                                    <li><a href="">Free Shipping by Amazon</a></li>
+                                    <li><a href="">Pickup Point Delivery</a></li>
+                                    <li><a href=""> More in Shipping & Delivery</a></li>
+                                </ul>
+                                <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-14B0880C-FE88-49DC-8E4A-800AC4CF5E90_en-GB.png">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="topic-maouse-hover3">
+                        <h4 onmouseover="myfunctionover3()" onmouseout="myfuntionout3()">Managing Your Account</h4>
+                        <div class="topic4">
+                            <div class="topic-inside-of">
+                                <ul>
+
+                                    Managing Your Account
+                                    <li><a href="">Add & Manage Addresses </a></li>
+                                    <li><a href="">Change Your Account Settings</a></li>
+                                    <li><a href="">More in Managing Your Account</a></li>
+                                    <li><a href=""></a></li>
+
+                                </ul>
+                                <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-88BDB20E-9A1C-4DBF-996F-C6F0CF1BE423_en-GB.png">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="topic-maouse-hover4">
+                        <h4 onmouseover="myfunctionover4()" onmouseout="myfuntionout4()">Payments, Pricing & Promotions
+                        </h4>
+                        <div class="topic5">
+                            <div class="topic-inside-of">
+                                <ul>
+                                    Payments, Pricing & Promotions
+                                    <li><a href="">Manage Payment Methods VideoVideo</a></li>
+                                    <li><a href="">Print an Invoice</a></li>
+                                    <li><a href=""> More in Payments, Pricing & Promotions</a></li>
+                                </ul>
+                                <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-F49D70BD-CA9B-4D08-9221-D704F6AFCC6F_en-GB.png">
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="topic-maouse-hover5">
+                        <h4 onmouseover="myfunctionover5()" onmouseout="myfuntionout5()">Returns & Refunds</h4>
+                        <dive class="topic6">
+                            <div class="topic-inside-of">
+                                <ul>Returns & Refunds
+                                    <li><a href="">Return Items You Ordered</a></li>
+                                    <li><a href="">About Our Return Policies</a></li>
+                                    <li><a href="">Refunds</a></li>
+                                    <li><a href="">More in Returns and Refunds</a></li>
+                                </ul>
+                                <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-D2D25277-9C3E-44CD-9318-37A084D06D95_en-GB.png">
+
+                            </div>
+                        </dive>
+
+                    </li>
+                    <li class="topic-maouse-hover6">
+                        <h4 onmouseover="myfunctionover6()" onmouseout="myfuntionout6()">Ordering</h4>
+                        <div class="topic7">
+                            <div class="topic-inside-of">
+                                <ul>Ordering
+                                    <li><a href="">Placing Orders</a></li>
+                                    <li><a href="">Ordering from a Marketplace Seller</a></li>
+                                    <li><a href=""> More in Ordering</a></li>
+                                </ul>
+                                <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-D2D25277-9C3E-44CD-9318-37A084D06D95_en-GB.png">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="topic-maouse-hover7">
+                        <h4 onmouseover="myfunctionover7()" onmouseout="myfuntionout7()">Amazon Devices</h4>
+
+                        <div class="topic8">
+                            <div class="topic-inside-of">
+                                <ul>Amazon Devices
+                                    <li><a href=""> Kindle E-Reader Help</a></li>
+                                    <li><a href=""> Kindle Content</a></li>
+
+                                </ul>
+                                <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-BDD77CC5-2374-48F7-89F2-18E8D51194D4_en-GB.png">
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="topic-maouse-hover8">
+                        <h4 onmouseover="myfunctionover8()" onmouseout="myfuntionout8()"> Gift Cards & Other Topics</h4>
+                        <div class="topic9">
+                            <div class="topic-inside-of">
+                                <ul style="font-size:20px;  font:bold; color: rgb(15, 15, 15);"> Gift Cards & Other
+                                    Topics
+                                    <li><a href="">Security & Privacy</a></li>
+                                    <li><a href="">Gift Cards & Lists</a></li>
+                                    <li><a href="">Site Features</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="topic-maouse-hover9">
+                        <h4 onmouseover="myfunctionover9()" onmouseout="myfuntionout9()">Need more Help?</h4>
+                        <div class="topic10">
+                            <div class="topic-inside-of">
+                                <ul> Need more Help?
+                                    <li><a href="">Contact Us</a></li>
+
+                                </ul>
+                                <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/support_images/GUID-E69201DE-CCF8-4E3D-9270-1C4EDD8D7791_en-GB.png">
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="back-to-top">
+            <a href="">
+                <div class="to-top">
+                    <span>Back to top</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="row-2">
+            <div class="container-2">
+                <div class="column-2 pad-1">
+                    <div class="content-2">
+                        <div>Get to Know Us</div>
+                        <a class="footer-link" href="">
+                            <p>About Amazon</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Careers</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Amazon Science</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2 pad-2">
+                    <div class="content-2">
+                        <div>Shop with Us</div>
+                        <a class="footer-link" href="">
+                            <p>Your Account</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Your Orders</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Your Addresses</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Your Lists</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2 pad-3">
+                    <div class="content-2">
+                        <div>Make Money with Us</div>
+                        <a class="footer-link" href="">
+                            <p>Sell on Amazon</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Fulfillment by Amazon</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2">
+                    <div class="content-2">
+                        <div>Let Us Help You</div>
+                        <a class="footer-link" href="">
+                            <p>Help</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Shipping & Delivery</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Returns & Replacements</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Amazon App Download</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer-img">
+            <a href="index.html">
+                <img class="one" src="img/amazon(1).jpg">
+            </a>
+            <img class="two" src="img/footer.JPG">
+        </div>
+        <div class="last-footer">
+            <div class="row-3">
+                <div class="container-3">
+                    <div class="column-3 pad-1">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Sell on Amazon.ae</p>
+                                <p class="footer-link-2">Sell globally, start with UAE</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-2">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Sell on Amazon.sa</p>
+                                <p class="footer-link-2">Sell globally, start with Saudi Arabia</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-3">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Amazon Web Services</p>
+                                <p class="footer-link-2">Scalable Cloud</p>
+                                <p class="footer-link-2">Computing Services</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-4">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Goodreads</p>
+                                <p class="footer-link-2">Book reviews</p>
+                                <p class="footer-link-2">& recommendations</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-5">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Audible</p>
+                                <p class="footer-link-2">Download</p>
+                                <p class="footer-link-2">Audio Books</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-6">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">IMDb</p>
+                                <p class="footer-link-2">Movies, TV</p>
+                                <p class="footer-link-2">& Celebrities</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-7">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Alexa</p>
+                                <p class="footer-link-2">Actionable Analytics</p>
+                                <p class="footer-link-2">for the Web</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-8">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Book Depository</p>
+                                <p class="footer-link-2">Books With Free..Delivery Worldwide</p>
+                                <p class="footer-link-2">Delivery Worldwide</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-9">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Shopbop</p>
+                                <p class="footer-link-2">Designer</p>
+                                <p class="footer-link-2">Fashion Brands</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="copyright">
+                        <ul>
+                            <li>
+                                <a href="">Conditions of Use & Sale</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Notice</a>
+                            </li>
+                            <li>
+                                <a href="">Interest-Based Ads</a>
+                            </li>
+                        </ul>
+                        <span>&copy;1996–2022, Amazon.com, Inc. or its affiliates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="help.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+</body>

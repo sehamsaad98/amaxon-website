@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Deals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style-D.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+        }
+
+        .m-header {
+
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .today-header {
+            width: 100%;
+
+            border-bottom: 1px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        span a {
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(151, 152, 153);
+        }
+
+        .h-aderss {
+            margin: 10px;
+            padding: 15px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            font-family: "Amazon Ember", Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .items {
+            width: 100%;
+            height: 302px;
+            overflow: hidden;
+        }
+
+        .flex-container1 {
+            display: flex;
+            padding: 0;
+            margin: 0 0 24px;
+            list-style: none;
+            overflow-x: auto
+        }
+
+        .flex-item1 {
+            min-width: 120px;
+            min-height: 60px;
+            margin-top: 10px;
+            margin-right: 10px;
+            color: black;
+            flex: 1;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .flex-item1 img {
+            width: 85px;
+            height: 80px;
+            max-width: 270px;
+            max-height: 270px;
+            border-radius: 50%;
+
+        }
+
+        .items ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .items ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        .items ::-webkit-scrollbar-thumb {
+            background: grey;
+            border-radius: 10px;
+        }
+
+        .fa-angle-right {
+            float: right;
+            margin-top: 10px;
+            height: 150px;
+            width: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .fa-angle-left {
+            margin-top: 10px;
+            height: 15px;
+            width: 40px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .flex-di {
+            display: flex;
+        }
+
+        .aside-right {
+            width: 20%;
+            height: fit-content;
+            border: 1px solid rgb(94, 91, 91);
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            border-radius: 5px;
+
+
+        }
+
+        .product-page-section {
+            border: 1px solid rgb(94, 91, 91);
+            height: fit-content;
+            width: 79%;
+            border-radius: 10px;
+
+        }
+
+        .catagery-prodect {
+            display: flex;
+        }
+
+        .catogry-block-asid {
+            margin: 7px;
+            padding: 10px;
+            align-items: center;
+
+
+        }
+
+        .conter-checked {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15x;
+            cursor: pointer;
+            font-size: 15px;
+
+
+        }
+
+        .conter-checked input {
+            position: absolute;
+            height: 0px;
+            width: 0px;
+            opacity: 0px;
+            padding-left: 0;
+
+        }
+
+        .header-cat {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .flex-item12 {
+            min-width: 120px;
+
+            margin-top: 10px;
+
+            color: black;
+            flex: 1;
+            overflow: hidden;
+            text-align: center;
+
+        }
+
+        .flex-item12 img {
+            max-width: 270px;
+            max-height: 270px;
+
+
+        }
+
+        .flex-item12 span {
+            background-color: rgb(133, 10, 10);
+            color: #f8f8f8;
+
+            padding: 3px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .data-type1 ul li a:hover,
+        .price-1 ul li a:hover,
+        .discount-1 ul li a:hover {
+            color: rgb(241, 126, 19);
+        }
+
+        .data-type1 ul li a,
+        .price-1 ul li a,
+        .discount-1 ul li a {
+            color: blue;
+        }
+
+        .data-type1,
+        .price-1,
+        .discount-1 {
+            padding-right: 10px;
+            margin: 0px;
+        }
+
+        img:hover {
+            opacity: .8;
+            cursor: pointer;
+        }
+
+        input:hover {
+            opacity: .9;
+
+        }
+
+        .slected {
+            color: rgb(37, 138, 221);
+        }
+
+        .slected:hover {
+            color: rgb(241, 126, 19);
+            text-decoration: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img class="amazon" src="img/amazon.jpg">
+            </a>
+            <img class="egypt" src="img/deliver-to-egypt.JPG">
+        </div>
+        <form>
+            <select name="categories" id="categories">
+                <option value="All">All</option>
+                <option value="Amazon Devices">Amazon Devices</option>
+                <option value="Amazon Fashion">Amazon Fashion</option>
+                <option value="Arts, Crafts & Sewing">Arts, Crafts & Sewing</option>
+                <option value="Automotive Parts & Accessories">Automotive Parts & Accessories</option>
+                <option value="Baby">Baby</option>
+                <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+                <option value="Books">Books</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Grocery & Gourmet Food">Grocery & Gourmet Food</option>
+                <option value="Health, Household & Baby Care">Health, Household & Baby Care</option>
+                <option value="Home & Garden">Home & Garden</option>
+                <option value="Home Related">Home Related</option>
+                <option value="Industrial & Scientific">Industrial & Scientific</option>
+                <option value="Musical Instruments">Musical Instruments</option>
+                <option value="Office Products">Office Products</option>
+                <option value="Pet Supplies">Pet Supplies</option>
+                <option value="Software">Software</option>
+                <option value="Sports">Sports</option>
+                <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+                <option value="Toys & Games">Toys & Games</option>
+                <option value="Video Games">Video Games</option>
+            </select>
+            <input type="text">
+        </form>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <img class="navbar-signin" src="img/navbar-signin.JPG">
+        <i style="display: inline-block; color: white; margin-top: 17px; " id="cart" class="fas fa-shopping-cart"></i>
+        <span class="cart-quantity">0</span>
+    </header>
+    <!-- Topnav Start -->
+    <nav class="topnav">
+        <a onclick="openNav()"><i style="padding-right: 10px;" class="fa-solid fa-bars"></i>All</a>
+        <a href="amazon.html">Your amazon.eg</a>
+        <a href="todays-deale.html">Today's Deals</a>
+        <a href="">Sell</a>
+        <a href="help.html">Help</a>
+        <a href="">Fashion</a>
+        <a href="Grocery22.html">Grocery</a>
+        <a href="perfume page.html">Perfumes</a>
+        <a href="phone.html">Mobile Phones</a>
+        <a href="Electronics.html">Electronics</a>
+        <a href="">Appliances</a>
+        <a href="home.html">Home</a>
+        <a href="">Coupons</a>
+        <img class="navbar-sale" src="img/navbar-sale.jpg">
+    </nav>
+    <!-- Sidenav Start -->
+    <nav id="myNav" class="overlay">
+        <a id="closeSidebar" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+        <div class="overlay-content" id="mySidepanel">
+            <div class="hello">
+                <h2>Hello,Sign in</h2>
+            </div>
+            <div class="sidebar">
+                <h3 style="margin-bottom: 15px; float: left;">Trending</h3>
+                <ul>
+                    <li style="float: left; clear: left;"><a href="#">About</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Services</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Clients</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div style="clear: left;"></div>
+            <div class="sidebar">
+                <h3 style="margin-bottom: 15px; float: left;">Digital Content And Devices</h3>
+                <ul>
+                    <li style="float: left; clear: left;" onclick="openNav2()"><a href="#">Amazon Kindle E-readers
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i></a>
+                    </li>
+                </ul>
+                <nav id="myNav2" class="overlay2">
+                    <div class="overlay-content" id="mySidepanel">
+                        <div class="hello">
+                            <h2>Hello,Sign in</h2>
+                        </div>
+                        <div onclick="closeNav2()" style="cursor: pointer;" class="sidebar">
+                            <i class="fa-solid fa-arrow-left"
+                                style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                            <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar">
+                            <h3 style="margin-bottom: 15px; float: left;">Kindle E-Readers</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">Kindle</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Kindle Paperwhite</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Kindle Oasis</a></li>
+                                <li style="float: left; clear: left;"><a href="#">All Kindle E-readers</a></li>
+                            </ul>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar" style="border-bottom: none;">
+                            <h3 style="margin-bottom: 15px; float: left;">Kindle Content</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">How to buy eBooks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="sidebar">
+                <h3 style="margin-bottom: 15px; float: left;">Shop By Category</h3>
+                <ul>
+                    <li onclick="openNav3()" style="float: left; clear: left;"><a href="#">Mobiles, Tablets &
+                            Accessories
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                        </a></li>
+                    <nav id="myNav3" class="overlay2">
+                        <div class="overlay-content" id="mySidepanel">
+                            <div class="hello">
+                                <h2>Hello,Sign in</h2>
+                            </div>
+                            <div onclick="closeNav3()" style="cursor: pointer;" class="sidebar">
+                                <i class="fa-solid fa-arrow-left"
+                                    style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                                <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar">
+                                <h3 style="margin-bottom: 15px; float: left;">Mobiles, Tablets & More</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">All Mobile Phones</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Tablets</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">wearable Technology</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Cases & Covers</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Power Banks & Chargers</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">All Mobile Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar" style="border-bottom: none;">
+                                <h3 style="margin-bottom: 15px; float: left;">Kindle Content</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">How to buy eBooks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <li onclick="openNav4()" style="float: left; clear: left;"><a href="#">Computers & Office Supplies
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                        </a></li>
+                    <nav id="myNav4" class="overlay2">
+                        <div class="overlay-content" id="mySidepanel">
+                            <div class="hello">
+                                <h2>Hello,Sign in</h2>
+                            </div>
+                            <div onclick="closeNav4()" style="cursor: pointer;" class="sidebar">
+                                <i class="fa-solid fa-arrow-left"
+                                    style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                                <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar">
+                                <h3 style="margin-bottom: 15px; float: left;">Computers</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">All Computers</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Laptops</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Desktop & Monitors</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Drives & Storage</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Networking Devices</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Keyboards & Mice</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">PC Gaming</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">All Computer Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar" style="border-bottom: none;">
+                                <h3 style="margin-bottom: 15px; float: left;">Office & Stationery</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">Printers & Accessories</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Office & School Supplies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <li onclick="openNav5()" style="float: left; clear: left;"><a href="#">TVs & Electronics
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                        </a></li>
+                    <nav id="myNav5" class="overlay2">
+                        <div class="overlay-content" id="mySidepanel">
+                            <div class="hello">
+                                <h2>Hello,Sign in</h2>
+                            </div>
+                            <div onclick="closeNav5()" style="cursor: pointer;" class="sidebar">
+                                <i class="fa-solid fa-arrow-left"
+                                    style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                                <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar" style="border-bottom: none;">
+                                <h3 style="margin-bottom: 15px; float: left;">Electronics</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">All Electronics</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Televisions</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Cameras</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Headphones</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Speakers</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Home Entertainment Systems</a>
+                                    </li>
+                                    <li style="float: left; clear: left;"><a href="#">All Electronic Accessories</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                        </div>
+                    </nav>
+                    <li onclick="openNav6()" style="float: left; clear: left;"><a href="#">Women's Fashion
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                        </a></li>
+                    <nav id="myNav6" class="overlay2">
+                        <div class="overlay-content" id="mySidepanel">
+                            <div class="hello">
+                                <h2>Hello,Sign in</h2>
+                            </div>
+                            <div onclick="closeNav6()" style="cursor: pointer;" class="sidebar">
+                                <i class="fa-solid fa-arrow-left"
+                                    style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                                <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar">
+                                <h3 style="margin-bottom: 15px; float: left;">Amazon Fashion</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">All Fashion</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">All Women's Fashion</a></li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar">
+                                <h3 style="margin-bottom: 15px; float: left;">Clothing, Watches & More</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">Clothing</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Watches</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Jewelry</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Sportswear</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Lingerie & Sleepwear</a></li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar" style="border-bottom: none;">
+                                <h3 style="margin-bottom: 15px; float: left;">Bags, Shoes & More</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">Shoes</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Bags & Wallets</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Eyewear</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Sports Shoes</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Travel Bags & Backpacks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <h3 style="margin-bottom: 15px; float: left;">Programs & Features</h3>
+                <ul>
+                    <li style="float: left; clear: left;"><a href="#">Today's Deals</a></li>
+                </ul>
+            </div>
+            <div class="sidebar" style="border-bottom: none;">
+                <h3 style="margin-bottom: 15px; float: left;">Help & Settings</h3>
+                <ul>
+                    <li style="float: left; clear: left;"><a href="#">Your Account</a></li>
+                    <li style="float: left; clear: left;"><a href="#">
+                            <i style="color: black; margin-top: 0; margin-left: 0; padding-right: 10px;"
+                                class="fa-solid fa-globe"></i>English</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Egypt</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Help</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--  cartModal Start -->
+    <div class="cart-modal-overlay">
+        <div class="cart-modal">
+            <i id="close-btn" class="fas fa-times"></i>
+            <h1 class="cart-is-empty">Cart is empty</h1>
+            <div class="product-rows"></div>
+            <div class="total">
+                <h1 class="cart-total">TOTAL</h1>
+                <span class="total-price">0 egp</span>
+                <button class="purchase-btn">PURCHASE</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="m-header">
+        <div class="today-header"> <span><a href="">Today's Deals</a></span>
+            <span><a href="">DealsWatched</a></span><span><a href="">DealsCoupons</a></span>
+        </div>
+
+    </header>
+    <div class="h-aderss">
+        <h1>Today's Deals</h1>
+    </div>
+    <div class="list-of-prodact">
+        <div class="items"><i class="fa-solid fa-angle-right"></i>
+            <i class="fa-solid fa-angle-left"></i>
+            <ul class="flex-container1">
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539204_315x315_2X.jpg">
+                    <p><span> ALL Deals</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539212_315x315_2X.jpg">
+                    <p><span>BeautyHome</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539188_315x315_2X.jpg">
+                    <p><span>Kitchen</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539215_315x315_2X.jpg">
+                    <p><span>Electronics</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539205_315x315_2X.jpg">
+                    <p><span>Mobiles & accessories</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539220_315x315_2X.jpg">
+                    <p><span>Health & Personal Care</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539221_315x315_2X.jpg">
+                    <p><span>PC & accessories</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539198_315x315_2X.jpg">
+                    <p><span>Fashion</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539222_315x315_2X.jpg">
+                    <p><span>Toys</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539187_315x315_2X.jpg">
+                    <p><span>Supermarket</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539181_315x315_2X.jpg">
+                    <p><span>Baby</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539186_315x315_2X.jpg">
+                    <p><span>Sports</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539190_315x315_2X.jpg">
+                    <p><span>Office Supplies</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539206_315x315_2X.jpg">
+                    <p><span>Tools & Home Improvement</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539216_315x315_2X.jpg">
+                    <p><span>Automotive</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539211_315x315_2X.jpg">
+                    <p><span>Outdoor & Garden</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539207_315x315_2X.jpg">
+                    <p><span>Books</span></p>
+                </li>
+                <li class="flex-item1">
+                    <img
+                        src="https://m.media-amazon.com/images/G/42/Sunrise/Deals/Icons/XCM_Manual_4539193_315x315_2X.jpg">
+                    <p><span>Video Games</span></p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="catagery-prodect">
+
+        <aside class="aside-right">
+            <div class="header-cat">
+                <h4>catagrey</h4>
+            </div>
+            <div class="catogry-block-asid">
+                <h4 class="slected">
+                    Select all</h4>
+                <label for="check1" class="conter-checked"> Automotive</label>
+                <input type="checkbox" id="check1">
+
+                <label class="conter-checked" for="check2">Baby Products</label>
+
+                <input type="checkbox" id="check2">
+                <label class="conter-checked" for="check3">Beauty</label>
+                <input type="checkbox" id="check3">
+                <label class="conter-checked" for="check4">Computers & Accessories</label>
+                <input type="checkbox" id="check4">
+                <label class="conter-checked" for="check5">Electronics</label>
+                <input type="checkbox" id="check5">
+                <label class="conter-checked" for="check6">Fashion</label>
+                <input type="checkbox" id="check6">
+                <label class="conter-checked" for="check7">Fashion - Baby</label>
+                <input type="checkbox" id="check7">
+                <label class="conter-checked" for="check8">Fashion - Boys</label>
+                <input type="checkbox" id="check8">
+                <label class="conter-checked" for="check9">Fashion - Girls</label>
+                <input type="checkbox" id="check9">
+                <label class="conter-checked" for="check10">Fashion - Men</label>
+                <input type="checkbox" id="check10">
+                <label class="conter-checked" for="check11">Fashion - Women</label>
+                <input type="checkbox" id="check11">
+                <label class="conter-checked" for="check12">Garden</label>
+                <input type="checkbox" id="check12">
+                <label class="conter-checked" for="check13">Health</label>
+                <input type="checkbox" id="check13">
+                <label class="conter-checked" for="check14">Home & Kitchen</label>
+                <input type="checkbox" id="check14">
+                <label class="conter-checked" for="check15">Home Improvement</label>
+                <input type="checkbox" id="check15">
+                <label class="conter-checked" for="check16">Mobile Phones & Accessories</label>
+                <input type="checkbox" id="check16">
+                <label class="conter-checked" for="check17">Musical Instruments</label>
+                <input type="checkbox" id="check17">
+                <label class="conter-checked" for="check18">Office Products</label>
+                <input type="checkbox" id="check18">
+                <label class="conter-checked" for="check19">Sporting Goods</label>
+                <input type="checkbox" id="check19">
+                <label class="conter-checked" for="check20">Toys</label>
+                <input type="checkbox" id="check20">
+            </div>
+            <div class="marg-pad-data-type">
+                <div class="cat-all deale">
+                    <div class="data-type1">
+                        <ul>
+                            <h3>data type</h3>
+
+                            <li> <a href="">All deals</a></li>
+                            <li> <a href=""> Deal of the day</a></li>
+                            <li><a href="">Lightning deals</a></li>
+
+                            <li><a href=""> Best deal</a></li>
+                            <div style="height:50px;"></div>
+                        </ul>
+                        <ul><a href="">All deals
+
+
+                            </a>
+                            <li><a href=""> Available </a></li>
+                            <li> <a href=""> Upcoming </a></li>
+
+                            <li><a href=""> Watchlist </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-1">
+                    <ul>
+                        <h4>Price</h4>
+                        <li> <a href="">
+                                <h4>All</h4>
+                            </a></li>
+                        <li> <a href=""> Under EGP400</a></li>
+                        <li><a href=""> EGP400 to EGP800</a></li>
+                        <li><a href="">EGP1,600 & above</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="discount-1">
+                    <ul>
+                        <h4>Discount</h4>
+                        <li> <a href=""> All deals </a></li>
+                        <li> <a href=""> 10% off or more</a></li>
+                        <li> <a href="">20% off or more</a></li>
+                        <li> <a href="">30% off or more</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+        <section class="product-page-section">
+
+            <div class="items12">
+                <ul class="flex-container12">
+                    <div class="flex-di">
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/31gage4j2XS.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/5148cs2rQ2L.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Women Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41AtwonX0eL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Women Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41iZscE-kUL.jpg">
+                            <div><span>EGP349 and under<span
+                                        style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                    </div>
+                    <div class="flex-di">
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/31MVR5oVdgL.jpg">
+                            <div><span>EGP379 and underf<span
+                                        style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Kids Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/318GMb8DXkL.jpg">
+                            <div><span> Up to 4% off <span
+                                        style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Travel Luggage Best Sellers</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/2121q0jOM5L.jpg">
+                            <div><span>Up to 30% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Reebok New Arrivals</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41BHMNFDnKL.jpg">
+                            <div><span>Up to 10% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Save On Watches Top Sellers</a>
+                        </li>
+                    </div>
+                    <div class="flex-di">
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41d7ObJ1bGL.jpg">
+                            <div><span>Watches Top Brands
+                                    EGP6,929 and under<span
+                                        style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Save On Watches Top Sellers</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41BzkUAxePS.jpg">
+                            <div><span>Up to 11% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Bags Top Brands</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41-NhYLNJLL.jpg">
+                            <div><span>up to 7% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Bags Top Brands
+                                Converse</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41SWvPLO5yL.jpg">
+                            <div><span>up to 13% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Converse
+                                NORSHIRE Mini Portable Digital Tires Infla</a>
+                        </li>
+                    </div>
+                    <div class="flex-di">
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/31Kj1N1qByL.jpg">
+                            <div><span>EGP1,200.00
+                                    List Price: EGP1,377.49<span
+                                        style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> NORSHIRE Mini Portable Digital Tires Inflator - Black
+                                31</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/412yvd4bUZL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/318JdWJ124S.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41MNrjcYJIS.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                    </div>
+                    <div class="flex-di">
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/31cjI1gXpJL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41JuG-fVM2L.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/21nOwTls5mL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/51CF4QTqMHL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                    </div>
+                    <div class="flex-di">
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/31F7T4uMhpL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/51NGlCVUqmL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/41+UwdGE+TL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/21QM3PpTCDL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                    </div>
+                    <div class="flex-di">
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/31DZkP1DJxL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/31FUv5cGI+S.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/4139mhlrVKL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                        <li class="flex-item12">
+                            <img src="https://m.media-amazon.com/images/I/5117NGspYSL.jpg">
+                            <div><span>up to 44% off<span style="background-color: #f8f8f8;color: rgb(133, 10, 10);">Top
+                                        deal</span></span></div>
+                            <br>
+
+                            <a href=""> Andora Men Clothing</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div style="width: 100%;height: 50px;"></div>
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="back-to-top">
+            <a href="">
+                <div class="to-top">
+                    <span>Back to top</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="row-2">
+            <div class="container-2">
+                <div class="column-2 pad-1">
+                    <div class="content-2">
+                        <div>Get to Know Us</div>
+                        <a class="footer-link" href="">
+                            <p>About Amazon</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Careers</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Amazon Science</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2 pad-2">
+                    <div class="content-2">
+                        <div>Shop with Us</div>
+                        <a class="footer-link" href="">
+                            <p>Your Account</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Your Orders</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Your Addresses</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Your Lists</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2 pad-3">
+                    <div class="content-2">
+                        <div>Make Money with Us</div>
+                        <a class="footer-link" href="">
+                            <p>Sell on Amazon</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Fulfillment by Amazon</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2">
+                    <div class="content-2">
+                        <div>Let Us Help You</div>
+                        <a class="footer-link" href="">
+                            <p>Help</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Shipping & Delivery</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Returns & Replacements</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Amazon App Download</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer-img">
+            <a href="index.html">
+                <img class="one" src="img/amazon(1).jpg">
+            </a>
+            <img class="two" src="img/footer.JPG">
+        </div>
+        <div class="last-footer">
+            <div class="row-3">
+                <div class="container-3">
+                    <div class="column-3 pad-1">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Sell on Amazon.ae</p>
+                                <p class="footer-link-2">Sell globally, start with UAE</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-2">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Sell on Amazon.sa</p>
+                                <p class="footer-link-2">Sell globally, start with Saudi Arabia</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-3">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Amazon Web Services</p>
+                                <p class="footer-link-2">Scalable Cloud</p>
+                                <p class="footer-link-2">Computing Services</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-4">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Goodreads</p>
+                                <p class="footer-link-2">Book reviews</p>
+                                <p class="footer-link-2">& recommendations</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-5">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Audible</p>
+                                <p class="footer-link-2">Download</p>
+                                <p class="footer-link-2">Audio Books</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-6">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">IMDb</p>
+                                <p class="footer-link-2">Movies, TV</p>
+                                <p class="footer-link-2">& Celebrities</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-7">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Alexa</p>
+                                <p class="footer-link-2">Actionable Analytics</p>
+                                <p class="footer-link-2">for the Web</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-8">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Book Depository</p>
+                                <p class="footer-link-2">Books With Free..Delivery Worldwide</p>
+                                <p class="footer-link-2">Delivery Worldwide</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-9">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Shopbop</p>
+                                <p class="footer-link-2">Designer</p>
+                                <p class="footer-link-2">Fashion Brands</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="copyright">
+                        <ul>
+                            <li>
+                                <a href="">Conditions of Use & Sale</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Notice</a>
+                            </li>
+                            <li>
+                                <a href="">Interest-Based Ads</a>
+                            </li>
+                        </ul>
+                        <span>&copy;1996–2022, Amazon.com, Inc. or its affiliates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>

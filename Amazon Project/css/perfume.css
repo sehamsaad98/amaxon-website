@@ -1,0 +1,287 @@
+*
+{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Signika Negative', sans-serif;}
+
+
+/*this is the navbar  */
+
+
+
+
+
+
+
+/* here is the container */
+/* the side div in the container */
+#container{
+    height: 1200px;
+}
+
+#sideDiv
+    {
+        display:inline-block;
+        float: left;
+        padding-top: 20px;
+        padding-left: 10px;
+        /* box-shadow: 0px 20px 10px -15px #111; */
+        margin: 10px;
+       
+    }
+    
+aside{
+    display: inline-block;
+    border-right: 2px solid #ddd;
+    float:right;
+    width: 200px;
+    
+
+}
+
+#sideDiv ul li{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+#sideDiv ul li a{
+color: black;
+text-decoration: none;
+
+}
+
+
+#sideDiv ul li a:hover{
+    color: orange;
+    
+    }
+    
+  
+#sideDiv ul li i{
+    color: orange;
+    
+    }  
+
+/* this is the main div which contian the products  */
+
+
+ #mainDiv{
+     display: inline-block;
+     float: right; 
+     /* box-shadow: 0px 15px 10px -15px #111; */
+     width: 1100px;
+     
+     /* padding-left: 50px;
+     margin-left: 20px; */
+     /* box-shadow: inset; */
+
+ }
+   
+/* Fragrances */
+
+.first-section{
+    display: inline-block;
+    float: right; 
+    box-shadow: 0px 15px 10px -15px  gray;
+    /* margin: buttom 30px; */
+}
+ #firstp{
+    font-weight: 700;
+    font-size:30px;
+  padding: 20px;
+  
+
+}
+
+ 
+ #childImage{
+     width: 1100px;
+   /* margin: 10px; */
+padding: 10px;
+
+ }
+
+ /*  style of Shop by Category*/
+ #categorydiv{
+     margin-top: 100px;
+    width: 1100px;
+     box-shadow: 0px 15px 10px -15px gray;
+ /* max-width: 1500px; */
+  
+   
+}
+
+ #categorydiv img{
+     height: 250px;
+     width: 250px;
+     /* padding: 10px; */
+     margin: 10px;
+ }
+
+
+ /* Shop by Price */
+#shopPrice{
+
+    margin:10px;
+    box-shadow: 0px 15px 10px -15px gainsboro;
+
+}
+
+
+
+ #shopPrice a{
+/* height:30px; */
+ width:200px; 
+     font-size: 15px;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+ /* float: right; */
+direction: rtl;
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin:10px;
+
+
+ }
+#shopPrice a:hover{
+    background-color:black;
+    color: white;
+}
+
+
+
+/*How Strong is Your Perfume?  */
+
+#strongPerfume{  
+     margin-top: 20px;
+    box-shadow: 0px 15px 10px -15px gainsboro;
+max-width: 1500px;
+   margin-top: 20px;
+    padding-top: 20px;
+
+}
+
+#strongPerfume img{
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+
+/* Shop by Brand */
+
+#brand{
+    
+
+    margin-top: 20px;
+    direction:ltr;
+    
+    box-shadow: 0px 15px 10px -15px gainsboro;
+
+   
+    padding-top: 20px;
+
+
+    
+    
+}
+
+#brand img{
+    height: 100px;
+    width:250px;
+    margin: 10px;
+}
+
+
+
+/* Shop by Scent Type */
+#shopType{
+    margin-top: 20px;
+    box-shadow: 0px 15px 10px -15px gainsboro;
+max-width: 1500px;
+   /* margin: 10px; */
+    padding-top: 20px;
+    /* float: right; */
+}
+#shopType img{
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+
+
+/* menu of products */
+
+
+
+
+#beforeproduct{
+    box-shadow: 0px 15px 10px -15px  gray;
+    border:1px solid gray;
+    border-radius:5px;
+    width:1090px; 
+    float:right;
+     height:30px; 
+     padding-top:10px; 
+     margin: 20px;
+     margin-top: 40px;
+
+}
+#products{
+    width: 1100px;
+    display: inline-block;
+    
+}
+
+
+.productContain{
+    margin-top: 10px;
+    background-color:rgb(251, 251, 251);
+    height:320px;
+    width: 310px;
+    position:relative;    
+     text-align:center;
+     display: inline-block;
+     margin-right: 50px;
+    }
+
+.productContain a{
+        text-decoration:none;
+   color:black;
+
+    }
+
+ .productContain li{
+     display: inline-block;
+     color: orange;
+ }
+
+    /* see more */
+    #latestdiv{
+        background-color: rgb(196, 191, 191);
+        border-radius: 10px;
+        height: 40px;
+        margin: 20px;
+        text-align: center;
+        padding-top:10px ;
+    }
+
+    #latestdiv a{
+        color: rgb(31, 121, 173);
+        text-decoration:none;
+        font-size: 20px;
+    }
+
+    #latestdiv a:hover{
+        color:orangered;
+        text-decoration: underline;
+    }

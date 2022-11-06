@@ -1,0 +1,125 @@
+{
+    "links" : ["Nescafe ","BestSeller","Sports","Computer&Accessoires","TVs","Laptobs","Toys & Games","HeadPhones","Beauty & Personal Care","WearableTechnology","HomeEntertaimentSystem"],
+    
+   
+
+"menu":[
+    {
+        "id":1,
+        "name": "Nescafe Classic Jar with Red Mug - 200g",
+        "image": "./Grocery/products/31iBcUMBTQL._AC_UL320_.jpg",
+        "price" : "EGP101.00 <del>EGP114.42",
+        "description" : "Fulfilled by Amazon - FREE Shipping on orders over EGP 350",
+        "offer" : "",
+        "ratting":"⭐⭐⭐⭐",
+        "offernumber":"(7 new offer)"
+    },
+    {
+        "id":2,
+        "name": "Vanish Liquid Fabric Stain Remover - 450ml",
+        "image": "./Grocery/products/31ao-hyffGL._AC_UL320_.jpg",
+        "price" : "EGP37.00",
+        "description" : "Get it as soon as Today, May 10 Fulfilled by Amazon - FREE Shipping on",
+        "ratting":"⭐⭐⭐⭐⭐",
+        "offer" : "orders over EGP 350",
+        "offernumber" : "(7 new offer)"
+    },
+    {
+        "id":3,
+        "name": "Eagle Fortress water spray no.00367",
+        "image": "./Grocery/products/31DwRCz2BbL._AC_SX184_.jpg",
+        "price" : "EGP93.<sup>98",
+        "description" : "Get it as soon as Today, May 10Fulfilled by Amazon - FREE Shipping on orders over EGP 350",
+        "ratting":"⭐⭐⭐",
+        "offer" : "",
+        "offernumber":"(6 new offer)"
+    },
+    {
+        "id":4,
+        "name": "Gulf-Fashion Women's Girls Lace Turban Loop Elastic Headband Head Wrap Hair Band",
+        "image": "./Grocery/products/51WfdooNTOL._AC_SX184_.jpg",
+        "price" : "EGP44.<sup>90 <del>EGP49.80",
+        "description" : "Get it as soon as Today, May 10Fulfilled by Amazon - FREE Shipping on orders over EGP 350",
+        "ratting":"⭐⭐⭐⭐⭐",
+        "offer" : "",
+        "offernumber": ""
+    },
+    {
+        "id":5,
+        "name": "Ever Pure Renewing Argan Oil Of Morocco For Women, 300 Ml  ",
+        "image": "./Grocery/products/41hju2KmvuL._AC_SX184_.jpg",
+        "price" : "<sup>EGP</sup>89.<sup>92",
+        "description" : "Get it as soon as Today, May 10Fulfilled by Amazon - FREE Shipping on orders over EGP 350",
+        "ratting":"⭐⭐⭐⭐⭐",
+        "offer" : "",
+        "offernumber": ""
+    },
+    {
+        "id":6,
+        "name": "Nescafe Classic Jar with Red Mug - 200g",
+        "image": "./Grocery/products/41uShMsyvGL._AC_SX184_.jpg",
+        "price" : "EGP101.00 <del>EGP114.42",
+        "description" : "Fulfilled by Amazon - FREE Shipping on orders over EGP 350", 
+         "ratting":"⭐⭐⭐⭐⭐",
+        "offer" : "",
+        "offernumber":"(7 new offer)"
+    },
+    {
+        "id":7,
+        "name": "Vanish Liquid Fabric Stain Remover - 450ml",
+        "image": "./Grocery/products/41vjkcxzX8L._AC_SX184_.jpg",
+        "price" : "EGP37.00",
+        "description" : "Get it as soon as Today, May 10 Fulfilled by Amazon - FREE Shipping on",
+        "ratting":"⭐⭐⭐⭐⭐",
+        "offer" : "orders over EGP 350",
+        "offernumber" : "(7 new offer)"
+    },
+    {
+        "id":8,
+        "name": "Eagle Fortress water spray no.00367",
+        "image": "./Grocery/products/41xtJZEcmsL._AC_UL320_.jpg",
+        "price" : "EGP93.<sup>98",
+        "description" : "Get it as soon as Today, May 10Fulfilled by Amazon - FREE Shipping on orders over EGP 350",
+        "ratting":"⭐⭐⭐⭐",
+        "offer" : "",
+        "offernumber":"(6 new offer)"
+    },
+    {
+        "id":9,
+        "name": "Gulf-Fashion Women's Girls Lace Turban Loop Elastic Headband Head Wrap Hair Band",
+        "image": "./Grocery/products/41yF5HUTlpL._AC_UL320_.jpg",
+        "price" : "EGP44.<sup>90 <del>EGP49.80",
+        "description" : "Get it as soon as Today, May 10Fulfilled by Amazon - FREE Shipping on orders over EGP 350",
+        "ratting":"⭐⭐⭐",
+        "offer" : "",
+        "offernumber": ""
+    },
+    {
+        "id":10,
+        "name": "Ever Pure Renewing Argan Oil Of Morocco For Women, 300 Ml  ",
+        "image": "./Grocery/products/41ZyXFdE20L._AC_SX184_.jpg",
+        "price" : "<sup>EGP</sup>89.<sup>92",
+        "description" : "Get it as soon as Today, May 10Fulfilled by Amazon - FREE Shipping on orders over EGP 350",
+        "ratting":"⭐⭐⭐⭐⭐",
+        "offer" : "",
+        "offernumber": ""
+    },
+    {
+        "id":11,
+        "name": "Nescafe Classic Jar with Red Mug - 200g",
+        "image": "./Grocery/products/510WvgeCjYL._AC_UL320_.jpg",
+        "price" : "EGP101.00 <del>EGP114.42",
+        "description" : "Fulfilled by Amazon - FREE Shipping on orders over EGP 350",
+        "ratting":"⭐⭐⭐⭐⭐",
+        "offer" : "",
+        "offernumber":"(7 new offer)"
+    },
+    {
+        "id":12,
+        "name": "Nescafe Classic Jar with Red Mug - 200g",
+        "image": "./Grocery/products/51FlQTFA49L._AC_UL320_.jpg",
+        "price" : "EGP101.00 <del>EGP114.42",
+        "description" : "Fulfilled by Amazon - FREE Shipping on orders over EGP 350",
+        "ratting":"⭐⭐⭐⭐⭐",
+        "offer" : "",
+        "offernumber" : ""}]}

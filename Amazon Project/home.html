@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Home</title>
+
+    <!-- Css links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="icon" href="img/logo.jpg">
+    <style>
+        body {
+            font-family: "Amazon Ember", Arial, sans-serif;
+            background-color: white;
+        }
+
+        .card-btn {
+            height: 20px;
+            margin-left: 140px;
+            color: rgb(255, 255, 255);
+            text-transform: capitalize;
+            border: none;
+            outline: none;
+            background: rgb(204, 12, 57);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img class="amazon" src="img/amazon.jpg">
+            </a>
+            <img class="egypt" src="img/deliver-to-egypt.JPG">
+        </div>
+        <form>
+            <select name="categories" id="categories">
+                <option value="All">All</option>
+                <option value="Amazon Devices">Amazon Devices</option>
+                <option value="Amazon Fashion">Amazon Fashion</option>
+                <option value="Arts, Crafts & Sewing">Arts, Crafts & Sewing</option>
+                <option value="Automotive Parts & Accessories">Automotive Parts & Accessories</option>
+                <option value="Baby">Baby</option>
+                <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+                <option value="Books">Books</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Grocery & Gourmet Food">Grocery & Gourmet Food</option>
+                <option value="Health, Household & Baby Care">Health, Household & Baby Care</option>
+                <option value="Home & Garden">Home & Garden</option>
+                <option value="Home Related">Home Related</option>
+                <option value="Industrial & Scientific">Industrial & Scientific</option>
+                <option value="Musical Instruments">Musical Instruments</option>
+                <option value="Office Products">Office Products</option>
+                <option value="Pet Supplies">Pet Supplies</option>
+                <option value="Software">Software</option>
+                <option value="Sports">Sports</option>
+                <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+                <option value="Toys & Games">Toys & Games</option>
+                <option value="Video Games">Video Games</option>
+            </select>
+            <input type="text">
+        </form>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <img class="navbar-signin" src="img/navbar-signin1.JPG">
+        <a style="    float: right; margin-top: -55px;" href="cart.html" onclick="setLocalStorage()"><img
+                src="img/islamimg/cart 2.PNG"></a>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Topnav Start -->
+    <nav class="topnav">
+        <a onclick="openNav()"><i style="padding-right: 10px;" class="fa-solid fa-bars"></i>All</a>
+        <a href="amazon.html">Your amazon.eg</a>
+        <a href="todays-deale.html">Today's Deals</a>
+        <a href="">Sell</a>
+        <a href="help.html">Help</a>
+        <a href="">Fashion</a>
+        <a href="Grocery22.html">Grocery</a>
+        <a href="perfume page.html">Perfumes</a>
+        <a href="phone.html">Mobile Phones</a>
+        <a href="Electronics.html">Electronics</a>
+        <a href="">Appliances</a>
+        <a href="home.html">Home</a>
+        <a href="">Coupons</a>
+        <img class="navbar-sale" src="img/navbar-sale.jpg">
+    </nav>
+    <!-- Topnav End -->
+
+    <!-- Sidenav Start -->
+    <nav id="myNav" class="overlay">
+        <a id="closeSidebar" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+        <div class="overlay-content" id="mySidepanel">
+            <div class="hello">
+                <h2>Hello,Sign in</h2>
+            </div>
+            <div class="sidebar">
+                <h3 style="margin-bottom: 15px; float: left;">Trending</h3>
+                <ul>
+                    <li style="float: left; clear: left;"><a href="#">About</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Services</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Clients</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div style="clear: left;"></div>
+            <div class="sidebar">
+                <h3 style="margin-bottom: 15px; float: left;">Digital Content And Devices</h3>
+                <ul>
+                    <li style="float: left; clear: left;" onclick="openNav2()"><a href="#">Amazon Kindle E-readers
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i></a>
+                    </li>
+                </ul>
+                <nav id="myNav2" class="overlay2">
+                    <div class="overlay-content" id="mySidepanel">
+                        <div class="hello">
+                            <h2>Hello,Sign in</h2>
+                        </div>
+                        <div onclick="closeNav2()" style="cursor: pointer;" class="sidebar">
+                            <i class="fa-solid fa-arrow-left"
+                                style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                            <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar">
+                            <h3 style="margin-bottom: 15px; float: left;">Kindle E-Readers</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">Kindle</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Kindle Paperwhite</a></li>
+                                <li style="float: left; clear: left;"><a href="#">Kindle Oasis</a></li>
+                                <li style="float: left; clear: left;"><a href="#">All Kindle E-readers</a></li>
+                            </ul>
+                        </div>
+                        <div style="clear: left;"></div>
+                        <div class="sidebar" style="border-bottom: none;">
+                            <h3 style="margin-bottom: 15px; float: left;">Kindle Content</h3>
+                            <ul>
+                                <li style="float: left; clear: left;"><a href="#">How to buy eBooks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="sidebar">
+                <h3 style="margin-bottom: 15px; float: left;">Shop By Category</h3>
+                <ul>
+                    <li onclick="openNav3()" style="float: left; clear: left;"><a href="#">Mobiles, Tablets &
+                            Accessories
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                        </a></li>
+                    <nav id="myNav3" class="overlay2">
+                        <div class="overlay-content" id="mySidepanel">
+                            <div class="hello">
+                                <h2>Hello,Sign in</h2>
+                            </div>
+                            <div onclick="closeNav3()" style="cursor: pointer;" class="sidebar">
+                                <i class="fa-solid fa-arrow-left"
+                                    style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                                <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar">
+                                <h3 style="margin-bottom: 15px; float: left;">Mobiles, Tablets & More</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">All Mobile Phones</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Tablets</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">wearable Technology</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Cases & Covers</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Power Banks & Chargers</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">All Mobile Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar" style="border-bottom: none;">
+                                <h3 style="margin-bottom: 15px; float: left;">Kindle Content</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">How to buy eBooks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <li onclick="openNav4()" style="float: left; clear: left;"><a href="#">Computers & Office Supplies
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                        </a></li>
+                    <nav id="myNav4" class="overlay2">
+                        <div class="overlay-content" id="mySidepanel">
+                            <div class="hello">
+                                <h2>Hello,Sign in</h2>
+                            </div>
+                            <div onclick="closeNav4()" style="cursor: pointer;" class="sidebar">
+                                <i class="fa-solid fa-arrow-left"
+                                    style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                                <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar">
+                                <h3 style="margin-bottom: 15px; float: left;">Computers</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">All Computers</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Laptops</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Desktop & Monitors</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Drives & Storage</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Networking Devices</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Keyboards & Mice</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">PC Gaming</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">All Computer Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar" style="border-bottom: none;">
+                                <h3 style="margin-bottom: 15px; float: left;">Office & Stationery</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">Printers & Accessories</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Office & School Supplies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <li onclick="openNav5()" style="float: left; clear: left;"><a href="#">TVs & Electronics
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                        </a></li>
+                    <nav id="myNav5" class="overlay2">
+                        <div class="overlay-content" id="mySidepanel">
+                            <div class="hello">
+                                <h2>Hello,Sign in</h2>
+                            </div>
+                            <div onclick="closeNav5()" style="cursor: pointer;" class="sidebar">
+                                <i class="fa-solid fa-arrow-left"
+                                    style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                                <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar" style="border-bottom: none;">
+                                <h3 style="margin-bottom: 15px; float: left;">Electronics</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">All Electronics</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Televisions</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Cameras</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Headphones</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Speakers</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Home Entertainment Systems</a>
+                                    </li>
+                                    <li style="float: left; clear: left;"><a href="#">All Electronic Accessories</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                        </div>
+                    </nav>
+                    <li onclick="openNav6()" style="float: left; clear: left;"><a href="#">Women's Fashion
+                            <i style="padding-left: 10px; color: black;" class="fa-solid fa-angle-right"></i>
+                        </a></li>
+                    <nav id="myNav6" class="overlay2">
+                        <div class="overlay-content" id="mySidepanel">
+                            <div class="hello">
+                                <h2>Hello,Sign in</h2>
+                            </div>
+                            <div onclick="closeNav6()" style="cursor: pointer;" class="sidebar">
+                                <i class="fa-solid fa-arrow-left"
+                                    style="float: left; padding-top: 21px; padding-right: 10px;"></i>
+                                <h3 style="margin-bottom: 15px; float: left;">MAIN MENU</h3>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar">
+                                <h3 style="margin-bottom: 15px; float: left;">Amazon Fashion</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">All Fashion</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">All Women's Fashion</a></li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar">
+                                <h3 style="margin-bottom: 15px; float: left;">Clothing, Watches & More</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">Clothing</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Watches</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Jewelry</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Sportswear</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Lingerie & Sleepwear</a></li>
+                                </ul>
+                            </div>
+                            <div style="clear: left;"></div>
+                            <div class="sidebar" style="border-bottom: none;">
+                                <h3 style="margin-bottom: 15px; float: left;">Bags, Shoes & More</h3>
+                                <ul>
+                                    <li style="float: left; clear: left;"><a href="#">Shoes</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Bags & Wallets</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Eyewear</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Sports Shoes</a></li>
+                                    <li style="float: left; clear: left;"><a href="#">Travel Bags & Backpacks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <h3 style="margin-bottom: 15px; float: left;">Programs & Features</h3>
+                <ul>
+                    <li style="float: left; clear: left;"><a href="#">Today's Deals</a></li>
+                </ul>
+            </div>
+            <div class="sidebar" style="border-bottom: none;">
+                <h3 style="margin-bottom: 15px; float: left;">Help & Settings</h3>
+                <ul>
+                    <li style="float: left; clear: left;"><a href="#">Your Account</a></li>
+                    <li style="float: left; clear: left;"><a href="#">
+                            <i style="color: black; margin-top: 0; margin-left: 0; padding-right: 10px;"
+                                class="fa-solid fa-globe"></i>English</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Egypt</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Help</a></li>
+                    <li style="float: left; clear: left;"><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sidenav End -->
+
+    <div>
+        <div style="width: 800px; height: 500px; border: 15px solid #EAEDED; margin: auto;">
+            <span style="float: left;">
+                <h3 style="font-size: 24px!important;
+            line-height: 32px!important; font-weight: 700!important; margin-left: 50px;">
+                    Home & Kitchen best deals
+                </h3>
+                <img src="img/islamimg/1.jpg" alt="" style="height: 250px; margin-left: 100px; margin-top: 50px;"><br>
+                <button class="card-btn" onclick="add('./1.jpg')">add to cart</button>
+            </span>
+
+            <span style="float: left;">
+                <img src="img/islamimg/66.jpg" alt=""
+                    style="height: 250px; width: 250px; margin-left: 100px; margin-top: 130px;"><br>
+                <button class="card-btn" style="margin-left:200px !important;">add to cart</button>
+
+            </span>
+        </div>
+
+        <div>
+            <p style="font-weight: 700;font-size: 24px;line-height: 32px; text-align: center;">
+                SHOP BY CATEGORY
+            </p>
+        </div>
+
+
+        <div style="width: 50%; margin: auto; height: 50px; border: 1px solid #EAEDED;
+    border-radius: 10px; ">
+
+            <h5 style="color: #0F1111!important;
+    font-size: 14px!important; line-height: 20px!important;margin-top: 15px; text-align: center;">
+                1-12 of over 60,000 results for
+                <a href="" style="color: #c45500!important;">Home & Kitchen</a>
+            </h5>
+        </div>
+        <center>
+            <div style="margin-top: 100px;">
+                <span style="float: left; width: 50%; margin-left: 50px;">
+                    <div>
+                        <img class="itemImage" src="img/islamimg/3.jpg" alt="" style="width: 300px; height: 180px">
+                        <h5 style="color: #0F1111!important;
+            font-size: 14px!important; width: 300px; line-height: 20px!important;margin-top: 15px;">
+                            Egg Whisk, Press Hand Auto Rotating - Stainless Steel
+                        </h5>
+                        <p class="itemPrice" style="display: inline;">EGP 17.00</p>
+                        <p style="text-decoration: line-through; display: inline;">22.00</p><br><br>
+                        <p style="width: 300px;">Get it as soon as Monday, May 9
+                            Fulfilled by Amazon - FREE Shipping on orders over EGP 350</p>
+
+                        <button style="margin-left: 20px;" class="card-btn" onclick="add('img/islamimg/3.jpg')">add to
+                            cart</button>
+                    </div>
+
+                    <div style="margin-top: 50px;">
+                        <img class="itemImage" src="img/islamimg/5.jpg" alt="" style="width: 300px; height: 180px">
+                        <h5 style="color: #0F1111!important;
+            font-size: 14px!important; width: 300px; line-height: 20px!important;margin-top: 15px;">
+                            Kitchen Spoon and Scoop Organizer Holder
+                        </h5>
+                        <p class="itemPrice" style="display: inline;">EGP 10.00</p>
+                        <p style="text-decoration: line-through; display: inline;">18.00</p><br><br>
+                        <p style="width: 300px;">Get it as soon as Friday, May 6
+                            Fulfilled by Amazon - FREE Shipping on orders over EGP 350
+                            More Buying Choices
+                            EGP 17.00(40 new offers)</p>
+
+                        <button style="margin-left: 20px;" class="card-btn" onclick="add('img/islamimg/5.jpg')">add to
+                            cart</button>
+                    </div>
+                </span>
+
+
+                <span style="float: left; width: 30%; margin-top: 20px;">
+
+                    <div>
+                        <img class="itemImage" src="img/islamimg/4.jpg" alt="" style="width: 150px; height: 250px">
+                        <h5 style="color: #0F1111!important;
+            font-size: 14px!important; width: 300px; line-height: 20px!important;margin-top: 15px;">
+                            Panasonic P-6JRC Replacement Water Filter Cartridge for 6RF , 3RF , CS10 , CS20
+                        </h5>
+                        <p class="itemPrice" style="display: inline;">EGP 55.00</p>
+                        <p style="text-decoration: line-through; display: inline;">80.00</p><br><br>
+                        <p style="width: 300px;">Get it as soon as Friday, May 6
+                            Fulfilled by Amazon - FREE Shipping on orders over EGP 350
+                            More Buying Choices
+                            EGP 17.00(40 new offers)</p>
+
+                        <button style="margin-left: 20px;" class="card-btn" onclick="add('img/islamimg/4.jpg')">add to
+                            cart</button>
+                    </div><br>
+
+                    <div>
+                        <img class="itemImage" src="img/islamimg/6.jpg" alt="" style="width: 230px; height: 200px">
+                        <h5 style="color: #0F1111!important;
+            font-size: 14px!important; width: 300px; line-height: 20px!important;margin-top: 15px;">
+                            Tornado Set of 3 fans TCF56WW Ceiling Fan - White
+                        </h5>
+                        <p class="itemPrice" style="display: inline;">EGP 350.00</p>
+                        <p style="text-decoration: line-through; display: inline;">400.00</p><br><br>
+                        <button style="margin-left: 20px;" class="card-btn" onclick="add('img/islamimg/6.jpg')">add to
+                            cart</button>
+                    </div>
+
+                </span>
+            </div>
+
+
+
+        </center>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="footer" style="clear: both;">
+        <div class="back-to-top">
+            <a href="">
+                <div class="to-top">
+                    <span>Back to top</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="row-2">
+            <div class="container-2">
+                <div class="column-2 pad-1">
+                    <div class="content-2">
+                        <div>Get to Know Us</div>
+                        <a class="footer-link" href="">
+                            <p>About Amazon</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Careers</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Amazon Science</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2 pad-2">
+                    <div class="content-2">
+                        <div>Shop with Us</div>
+                        <a class="footer-link" href="">
+                            <p>Your Account</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Your Orders</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Your Addresses</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Your Lists</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2 pad-3">
+                    <div class="content-2">
+                        <div>Make Money with Us</div>
+                        <a class="footer-link" href="">
+                            <p>Sell on Amazon</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Fulfillment by Amazon</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="column-2">
+                    <div class="content-2">
+                        <div>Let Us Help You</div>
+                        <a class="footer-link" href="">
+                            <p>Help</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Shipping & Delivery</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Returns & Replacements</p>
+                        </a>
+                        <a class="footer-link" href="">
+                            <p>Amazon App Download</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer-img">
+            <a href="index.html">
+                <img class="one" src="img/amazon(1).jpg">
+            </a>
+            <img class="two" src="img/footer.JPG">
+        </div>
+        <div class="last-footer">
+            <div class="row-3">
+                <div class="container-3">
+                    <div class="column-3 pad-1">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Sell on Amazon.ae</p>
+                                <p class="footer-link-2">Sell globally, start with UAE</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-2">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Sell on Amazon.sa</p>
+                                <p class="footer-link-2">Sell globally, start with Saudi Arabia</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-3">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Amazon Web Services</p>
+                                <p class="footer-link-2">Scalable Cloud</p>
+                                <p class="footer-link-2">Computing Services</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-4">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Goodreads</p>
+                                <p class="footer-link-2">Book reviews</p>
+                                <p class="footer-link-2">& recommendations</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-5">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Audible</p>
+                                <p class="footer-link-2">Download</p>
+                                <p class="footer-link-2">Audio Books</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-6">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">IMDb</p>
+                                <p class="footer-link-2">Movies, TV</p>
+                                <p class="footer-link-2">& Celebrities</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-7">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Alexa</p>
+                                <p class="footer-link-2">Actionable Analytics</p>
+                                <p class="footer-link-2">for the Web</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-8">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Book Depository</p>
+                                <p class="footer-link-2">Books With Free..Delivery Worldwide</p>
+                                <p class="footer-link-2">Delivery Worldwide</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-3 pad-9">
+                        <div class="content-3">
+                            <a href="">
+                                <p class="footer-link-1">Shopbop</p>
+                                <p class="footer-link-2">Designer</p>
+                                <p class="footer-link-2">Fashion Brands</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="copyright">
+                        <ul>
+                            <li>
+                                <a href="">Conditions of Use & Sale</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Notice</a>
+                            </li>
+                            <li>
+                                <a href="">Interest-Based Ads</a>
+                            </li>
+                        </ul>
+                        <span>&copy;1996–2022, Amazon.com, Inc. or its affiliates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
